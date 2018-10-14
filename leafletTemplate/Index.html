@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template Leaflet Page</title>
+        
+
+<!--This links to the leaflet stylesheet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+           crossorigin=""/>
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+        
+        
+
+<!--My styles for the main part of the page-->
+        <style>
+            h1,p, h2 {
+                text-align: center;
+                color: darkgreen;
+            }
+            #mapid {
+                height: 400px;
+                width: 95%;     
+            }
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>    
+
+    </head>
+    <body>
+        <script type="text/javascript" src="Leaflet.Graticule.js"></script>
+        <div id="pageHeaderDiv"><h1 id="pagetitle">Template Leaflet Page</h1></div>
+        
+<!--This is the map div-->
+        <div id="mapid" alt="Leaflet Map Div" class="center">
+            <script type="text/javascript" src="script.js"></script>  
+            
+        </div>
+        
+            
+<!--//This is where content under the map goes-->
+        <div id="content">
+        <p><br></p>
+        <h2>Insert additional page content here or below:</h2>
+        <p>See <a href="https://leafletjs.com/examples/geojson/">Leaflet and GeoJSON</a> for more information on using GeoJSON files with Leaflet</p>
+            
+        <p>See <a href="https://openmaptiles.org/docs/website/leaflet/">Open Map Tiles</a> for some open-source map tiles</p>    
+            
+        <p>See <a href="https://github.com/Leaflet/Leaflet.Graticule"> the gitHub page for the graticule plugin</a></p>    
+        </div>    
+    </body>    
+</html>
